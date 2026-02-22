@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sans Discord Bot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Sans Bot</a>
+      <div class="nav-links">
+        <a class="active" href="index.html">홈</a>
+        <a href="commands.html">명령어</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">DISCORD BOT</p>
+      <h1>Sans Bot 안내 페이지</h1>
+      <p class="subtitle">음악 재생, GPT 응답, 기본 유틸 명령을 한 번에 사용하는 개인 서버용 디스코드 봇</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=1474665155408429179&permissions=8&integration_type=0&scope=applications.commands+bot" target="_blank" rel="noopener noreferrer">봇 초대하기</a>
+        <a class="btn" href="commands.html">명령어 카테고리</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel" id="about">
+      <h2>봇 정보</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>주요 기능</h3>
+          <ul>
+            <li>유튜브 단일 영상/재생목록 재생</li>
+            <li>대기열 관리(스킵, 삭제, 셔플, 반복)</li>
+            <li>현재 재생 정보 조회</li>
+            <li>GPT 대화 (소유자 전용)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>현재 상태</h3>
+          <ul>
+            <li>슬래시 명령어 기반</li>
+            <li>재생목록 최대 50곡 자동 추가</li>
+            <li>유휴/무인 채널 자동 퇴장</li>
+            <li>응답 임베드 스타일 통일</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="commands-link">
+      <h2>명령어 카테고리</h2>
+      <p class="subtitle">상단 카테고리의 <strong>명령어</strong>를 누르면 전체 명령어 목록 페이지로 이동합니다.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="commands.html">명령어 목록 페이지로 이동</a>
+      </div>
+    </section>
+
+    <section class="panel" id="setup">
+      <h2>빠른 설치</h2>
+      <ol>
+        <li><code>pip install -r requirements.txt</code></li>
+        <li><code>.env</code>에 <code>TOKEN</code>, <code>GOOGLE_GEMINI_API_KEY</code> 설정</li>
+        <li><code>python bot.py</code> 실행</li>
+      </ol>
+      <p class="hint">슬래시 명령 즉시 반영이 필요하면 <code>GUILD_ID</code>도 설정하세요.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <section class="footer-brand">
+        <a class="footer-logo" href="index.html">
+          <img src="assets/footer-placeholder.svg" alt="footer logo placeholder" />
+        </a>
+        <p>© DARU129.</p>
+      </section>
+
+      <section class="footer-links">
+        <h4>약관 및 방침</h4>
+        <a href="terms.html">서비스 이용약관</a>
+        <a href="privacy.html">개인정보 처리 방침</a>
+        <a href="copyright.html">저작권 정책</a>
+        <a href="refund.html">환불 정책</a>
+      </section>
+
+      <section class="footer-support">
+        <h4>지원</h4>
+        <div class="support-item">
+          <span>공식 커뮤니티</span>
+          <span class="pill">공사중</span>
+        </div>
+        <div class="support-item">
+          <span>이메일 문의</span>
+          <a class="pill" href="mailto:hyogeun3466@naver.com">hyogeun3466@naver.com</a>
+        </div>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
